@@ -15,10 +15,10 @@ public abstract class Mapper {
 
                     Mapping mapping = toField.getAnnotation(Mapping.class);
                     String fieldName = !mapping.name().equals("") ? mapping.name() : toField.getName();
-                    boolean isOtherType = mapping.otherType();
 
                     Field fromField = source.getClass().getDeclaredField(fieldName);
                     boolean isEqualType = fromField.getType().equals(toField.getType());
+                    boolean isOtherType = mapping.otherType();
 
                     toField.setAccessible(true);
                     fromField.setAccessible(true);
