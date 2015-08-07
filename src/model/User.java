@@ -8,10 +8,19 @@ import java.util.List;
  * Created by Gaperez on 8/5/2015.
  */
 public class User {
+    private int id;
     private String name;
     private String password;
     private Persona persona;
     private List<Role> roles;
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
 
     public String getName() {
         return name;

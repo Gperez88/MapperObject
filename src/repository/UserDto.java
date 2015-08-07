@@ -8,7 +8,9 @@ import java.util.List;
 /**
  * Created by Gaperez on 8/5/2015.
  */
-public class UserDto {
+public class UserDto extends BaseColumn{
+    @Mapping
+    private int id;
     @Mapping(name = "name")
     private String username;
     @Mapping
@@ -17,6 +19,14 @@ public class UserDto {
     private PersonaDto personaDto;
     @Mapping(name = "roles", otherType = true)
     private List<RoleDto> rolesDto;
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
 
     public String getUsername() {
         return username;

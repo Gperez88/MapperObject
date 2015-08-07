@@ -10,7 +10,7 @@ public abstract class Mapper {
     public static <TDestination> TDestination map(Object source, Class<TDestination> clazz) {
         try {
             TDestination destination = clazz.newInstance();
-            for (Field toField : destination.getClass().getDeclaredFields()) {
+           for (Field toField : destination.getClass().getDeclaredFields()) {
                 if (toField.isAnnotationPresent(Mapping.class)) {
 
                     Mapping mapping = toField.getAnnotation(Mapping.class);

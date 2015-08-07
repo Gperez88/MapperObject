@@ -22,6 +22,7 @@ public class Main {
         roles.add(role);
 
         User user = new User();
+        user.setId(1);
         user.setName("gaperez");
         user.setPassword("Password123");
         user.setPersona(persona);
@@ -40,6 +41,7 @@ public class Main {
         System.out.println("*************************");
         System.out.println("**********USER***********");
         System.out.println("*************************");
+        System.out.println(user.getId());
         System.out.println(user.getName());
         System.out.println(user.getPassword());
         System.out.println(user.getPersona().getFirstname());
@@ -48,6 +50,7 @@ public class Main {
         System.out.println("*************************");
         System.out.println("*********USERDTO*********");
         System.out.println("*************************");
+        System.out.println(userDto.getId());
         System.out.println(userDto.getUsername());
         System.out.println(userDto.getPassword());
         System.out.println(userDto.getPersonaDto().getFirstname());
