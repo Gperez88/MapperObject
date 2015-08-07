@@ -1,14 +1,12 @@
 package repository;
 
 import mapper.Mapping;
-import model.Role;
-
 import java.util.List;
 
 /**
  * Created by Gaperez on 8/5/2015.
  */
-public class UserDto extends BaseColumn{
+public class UserDto{
     @Mapping
     private int id;
     @Mapping(name = "name")
