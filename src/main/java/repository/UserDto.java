@@ -1,8 +1,6 @@
 package repository;
 
 import mapper.Mapping;
-import model.Role;
-
 import java.util.List;
 
 /**

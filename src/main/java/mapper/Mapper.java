@@ -1,7 +1,6 @@
 package mapper;
 
 import java.lang.reflect.Field;
-import java.util.Collection;
 
 /**
  * Created by Gaperez on 8/5/2015.

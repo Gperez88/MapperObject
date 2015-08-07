@@ -1,7 +1,5 @@
 package model;
 
-import mapper.Mapping;
-
 import java.util.List;
 
 /**
