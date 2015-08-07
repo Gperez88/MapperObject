@@ -17,7 +17,7 @@ public class UserDto extends BaseColumn{
     private String password;
     @Mapping(name = "persona",otherType = true)
     private PersonaDto personaDto;
-    @Mapping(name = "roles", otherType = true)
+    @Mapping(name = "roles", iterable = true)
     private List<RoleDto> rolesDto;
 
     public int getId() {
