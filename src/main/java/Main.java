@@ -15,11 +15,19 @@ public class Main {
         persona.setFirstname("Gabriel");
         persona.setLastname("Perez");
 
-        Role role = new Role();
-        role.setName("admin");
+        Role role1 = new Role();
+        role1.setName("role1");
+
+        Role role2 = new Role();
+        role2.setName("role2");
+
+        Role role3 = new Role();
+        role3.setName("role3");
 
         List<Role> roles = new ArrayList<>();
-        roles.add(role);
+        roles.add(role1);
+        roles.add(role2);
+        roles.add(role3);
 
         User user = new User();
         user.setId(1);
@@ -28,15 +36,8 @@ public class Main {
         user.setPersona(persona);
         user.setRoles(roles);
 
-        //TODO: collection mapper coming soon :P
-        List<RoleDto> rolesDto = new ArrayList<>();
-        for(Role roleSource: roles){
-            RoleDto roleDto = Mapper.map(roleSource,RoleDto.class);
-            rolesDto.add(roleDto);
-        }
 
         UserDto userDto = Mapper.map(user, UserDto.class);
-        userDto.setRolesDto(rolesDto);
 
         System.out.println("*************************");
         System.out.println("**********USER***********");
@@ -46,7 +47,9 @@ public class Main {
         System.out.println(user.getPassword());
         System.out.println(user.getPersona().getFirstname());
         System.out.println(user.getPersona().getLastname());
-        System.out.println(user.getRoles().get(0).getName());
+        for (Role role : user.getRoles()) {
+            System.out.println(role.getName());
+        }
         System.out.println("*************************");
         System.out.println("*********USERDTO*********");
         System.out.println("*************************");
@@ -55,6 +58,8 @@ public class Main {
         System.out.println(userDto.getPassword());
         System.out.println(userDto.getPersonaDto().getFirstname());
         System.out.println(userDto.getPersonaDto().getLastname());
-        System.out.println(userDto.getRolesDto().get(0).getRolename());
+        for (RoleDto roleDto : userDto.getRolesDto()) {
+            System.out.println(roleDto.getRolename());
+        }
     }
 }

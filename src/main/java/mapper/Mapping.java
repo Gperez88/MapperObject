@@ -13,5 +13,4 @@ import java.lang.annotation.Target;
 public @interface Mapping {
     public String name() default "";
     public boolean otherType() default false;
-    public boolean iterable() default false;
 }

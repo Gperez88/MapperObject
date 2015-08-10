@@ -15,7 +15,7 @@ public class UserDto{
     private String password;
     @Mapping(name = "persona",otherType = true)
     private PersonaDto personaDto;
-    @Mapping(name = "roles", iterable = true)
+    @Mapping(name = "roles", otherType = true)
     private List<RoleDto> rolesDto;
 
     public int getId() {
