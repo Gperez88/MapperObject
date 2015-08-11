@@ -143,7 +143,7 @@ public class Main {
         user.setPersona(persona);
         user.setRoles(roles);
 
-
+        // mapper objects
         UserDto userDto = Mapper.map(user, UserDto.class);
 
         System.out.println("*************************");
