@@ -1,13 +1,46 @@
-import mapper.Mapper;
-import model.Persona;
-import model.Role;
-import model.User;
-import repository.RoleDto;
-import repository.UserDto;
+# MapperObject
+Object mapping example
 
-import java.util.ArrayList;
-import java.util.List;
+### Sample
 
+**source object**
+
+```java
+public class User {
+    private int id;
+    private String name;
+    private String password;
+    private Persona persona;
+    private List<Role> roles;
+
+    // implementation assumes the getters and setters.
+    
+}
+```
+
+**Destination Object**
+
+``` java
+public class UserDto{
+    @Mapping
+    private int id;
+    @Mapping(name = "name")
+    private String username;
+    @Mapping
+    private String password;
+    @Mapping(name = "persona",otherType = true)
+    private PersonaDto personaDto;
+    @Mapping(name = "roles", otherType = true)
+    private List<RoleDto> rolesDto;
+
+    // implementation assumes the getters and setters.
+
+}
+```
+
+**Implement**
+
+``` java
 public class Main {
 
     public static void main(String[] args) {
@@ -36,6 +69,7 @@ public class Main {
         user.setPersona(persona);
         user.setRoles(roles);
 
+        // mapper objects
         UserDto userDto = Mapper.map(user, UserDto.class);
 
         System.out.println("*************************");
@@ -49,7 +83,6 @@ public class Main {
         for (Role role : user.getRoles()) {
             System.out.println(role.getName());
         }
-
         System.out.println("*************************");
         System.out.println("*********USERDTO*********");
         System.out.println("*************************");
@@ -63,3 +96,4 @@ public class Main {
         }
     }
 }
+```
