@@ -2,12 +2,14 @@ package repository;
 
 import mapper.EntityMapper;
 import mapper.Mapping;
+import mapper.Parsable;
+import model.Persona;
 
 /**
  * Created by gabriel on 8/5/2015.
  */
 @EntityMapper
-public class PersonaDto {
+public class PersonaDto extends Parsable<Persona, PersonaDto> {
     @Mapping
     private String firstname;
     @Mapping
@@ -27,5 +29,10 @@ public class PersonaDto {
 
     public void setLastname(String lastname) {
         this.lastname = lastname;
+    }
+
+    @Override
+    public Class<Persona> getDomainClass() {
+        return Persona.class;
     }
 }

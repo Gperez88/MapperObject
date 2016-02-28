@@ -2,20 +2,23 @@ package repository;
 
 import mapper.EntityMapper;
 import mapper.Mapping;
+import mapper.Parsable;
+import model.User;
+
 import java.util.List;
 
 /**
  * Created by Gaperez on 8/5/2015.
  */
 @EntityMapper
-public class UserDto{
+public class UserDto extends Parsable<User, UserDto> {
     @Mapping
     private int id;
     @Mapping(name = "name")
     private String username;
     @Mapping
     private String password;
-    @Mapping(name = "persona",otherType = true)
+    @Mapping(name = "persona", otherType = true)
     private PersonaDto personaDto;
     @Mapping(name = "roles", otherType = true)
     private List<RoleDto> rolesDto;
@@ -58,5 +61,10 @@ public class UserDto{
 
     public void setRolesDto(List<RoleDto> rolesDto) {
         this.rolesDto = rolesDto;
+    }
+
+    @Override
+    public Class<User> getDomainClass() {
+        return User.class;
     }
 }
