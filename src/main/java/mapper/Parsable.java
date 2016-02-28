@@ -14,8 +14,9 @@ public abstract class Parsable<D, T extends Parsable> {
         return Mapper.map(this, getDomainClass());
     }
 
-    public void load(D domain) {
-        Mapper.map(domain, this);
+    @SuppressWarnings("unchecked")
+    public T load(D domain) {
+        return (T) Mapper.map(domain, this);
     }
 
     @SuppressWarnings("unchecked")
@@ -24,8 +25,7 @@ public abstract class Parsable<D, T extends Parsable> {
 
         for (D domain : domainList) {
             try {
-                T newType = (T) getClass().newInstance();
-                newType.load(domain);
+                T newType = (T) getClass().newInstance().load(domain);
                 viewList.add(newType);
             } catch (InstantiationException e) {
                 e.printStackTrace();
