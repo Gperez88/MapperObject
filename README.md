@@ -21,6 +21,7 @@ public class User {
 **Destination Object**
 
 ``` java
+@EntityMapper
 public class UserDto{
     @Mapping
     private int id;
