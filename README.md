@@ -71,7 +71,7 @@ public class Main {
         user.setRoles(roles);
 
         // mapper objects
-        UserDto userDto = Mapper.map(user, UserDto.class);
+        UserDto userDto = new UserDto().load(user);
 
         System.out.println("*************************");
         System.out.println("**********USER***********");
@@ -84,6 +84,7 @@ public class Main {
         for (Role role : user.getRoles()) {
             System.out.println(role.getName());
         }
+        
         System.out.println("*************************");
         System.out.println("*********USERDTO*********");
         System.out.println("*************************");
@@ -94,6 +95,22 @@ public class Main {
         System.out.println(userDto.getPersonaDto().getLastname());
         for (RoleDto roleDto : userDto.getRolesDto()) {
             System.out.println(roleDto.getRolename());
+        }
+        
+        System.out.println("***************************************");
+        System.out.println("*********DOMAIN LIST FROM DTO**********");
+        System.out.println("***************************************");
+        List<Role> rolesFromDto = new RoleDto().getDomainList(userDto.getRolesDto());
+        for (Role role : rolesFromDto) {
+            System.out.println(role.getName());
+        }
+
+        System.out.println("***************************************");
+        System.out.println("*********DTO LIST FROM DOMAIN**********");
+        System.out.println("***************************************");
+        List<RoleDto> rolesDtoFromDomain = new RoleDto().getViewList(rolesFromDto);
+        for (Role role : rolesFromDto) {
+            System.out.println(role.getName());
         }
     }
 }
