@@ -36,7 +36,6 @@ public class Main {
         user.setPersona(persona);
         user.setRoles(roles);
 
-
         UserDto userDto = Mapper.map(user, UserDto.class);
 
         System.out.println("*************************");
@@ -50,6 +49,7 @@ public class Main {
         for (Role role : user.getRoles()) {
             System.out.println(role.getName());
         }
+
         System.out.println("*************************");
         System.out.println("*********USERDTO*********");
         System.out.println("*************************");
