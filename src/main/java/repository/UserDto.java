@@ -1,11 +1,13 @@
 package repository;
 
+import mapper.EntityMapper;
 import mapper.Mapping;
 import java.util.List;
 
 /**
  * Created by Gaperez on 8/5/2015.
  */
+@EntityMapper
 public class UserDto{
     @Mapping
     private int id;
