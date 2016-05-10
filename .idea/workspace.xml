@@ -2,46 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="db08e945-ddbd-4bb3-b08a-34999bb696d1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/gp89developers/mapperobject/DefaultSettings.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/gp89developers/mapperobject/EntityMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/gp89developers/mapperobject/GlobalSettings.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/gp89developers/mapperobject/Mapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/gp89developers/mapperobject/MapperObject.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/gp89developers/mapperobject/Mapping.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/gp89developers/mapperobject/Parsable.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/gp89developers/mapperobject/ParsableObject.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/gp89developers/mapperobject/cache/Cache.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/gp89developers/mapperobject/cache/CacheEntry.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/gp89developers/mapperobject/cache/MapperCache.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/gp89developers/mapperobject/utils/CollectionUtils.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/gp89developers/mapperobject/MapperTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/gp89developers/mapperobject/TestUtils.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/gp89developers/mapperobject/dto/PersonDTO.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/gp89developers/mapperobject/dto/RolDTO.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/gp89developers/mapperobject/dto/UserDTO.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/gp89developers/mapperobject/entity/RolEntity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/gp89developers/mapperobject/entity/UserEntity.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/description.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/gp89developers/mapperobject/EntityMapper.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/gp89developers/mapperobject/Mapping.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/gp89developers/mapperobject/mapper/Mapper.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/gp89developers/mapperobject/mapper/Parsable.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/gp89developers/mapperobject/test/Main.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/gp89developers/mapperobject/test/model/Role.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/gp89developers/mapperobject/test/model/User.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/gp89developers/mapperobject/test/repository/PersonaDto.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/gp89developers/mapperobject/test/repository/RoleDto.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/gp89developers/mapperobject/test/repository/UserDto.java" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/gp89developers/mapperobject/test/model/Persona.java" afterPath="$PROJECT_DIR$/src/test/java/com/gp89developers/mapperobject/entity/PersonEntity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MapperObject.iml" afterPath="$PROJECT_DIR$/MapperObject.iml" />
     </list>
     <ignored path="MapperObect.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -113,15 +74,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MapperObject.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MapperObject.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/gp89developers/mapperobject/MapperObject.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="2.8977273">
+            <state vertical-scroll-proportion="0.0">
               <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
               <folding>
                 <element signature="e#750#751#0" expanded="true" />
                 <element signature="e#799#800#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="workspace.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -960,8 +931,15 @@
       <created>1462846851719</created>
       <option name="number" value="Default" />
       <updated>1462846851719</updated>
-      <workItem from="1462846853204" duration="792000" />
+      <workItem from="1462846853204" duration="907000" />
     </task>
+    <task id="LOCAL-00001" summary="refactor cache, setting, parseObject class extends">
+      <created>1462847735471</created>
+      <option name="number" value="00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1462847735471</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -994,7 +972,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="792000" />
+    <option name="totallyTimeSpent" value="907000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -1027,6 +1005,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="refactor cache, setting, parseObject class extends" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor cache, setting, parseObject class extends" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1179,12 +1161,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/gp89developers/mapperobject/MapperObject.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.8977273">
+        <state vertical-scroll-proportion="0.0">
           <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
           <folding>
             <element signature="e#750#751#0" expanded="true" />
             <element signature="e#799#800#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
