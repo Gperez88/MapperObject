@@ -1,11 +1,20 @@
-package com.gp89developers.mapperobject.test.model;
+package com.gp89developers.mapperobject.entity;
 
 /**
- * Created by gabriel on 8/5/2015.
+ * Created by gaperez on 4/29/2016.
  */
-public class Persona {
+public class PersonEntity {
+    private int id;
     private String firstname;
     private String lastname;
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
 
     public String getFirstname() {
         return firstname;
